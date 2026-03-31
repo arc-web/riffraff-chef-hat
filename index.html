@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="5-day meal prep guide for 2 people in Cebu. Order list, recipes, container sorting - all in one page.">
+<meta property="og:title" content="Cebu Meal Prep Guide">
+<meta property="og:description" content="5-day meal prep guide for 2 people. Order list, recipes, and container sorting.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2c2416">
+<title>Cebu Meal Prep Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <h1>Cebu Meal Prep Guide</h1>
+    <div class="header-meta">
+      <span class="people">2 people</span>
+      <span class="days">5 days</span>
+      <span class="containers">8 containers</span>
+    </div>
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('order')">Order</button>
+      <button class="tab" onclick="switchTab('cooking')">Cooking</button>
+      <button class="tab" onclick="switchTab('sorting')">Containers</button>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- ==================== ORDER TAB ==================== -->
+  <div id="tab-order" class="tab-panel active">
+
+    <div class="section">
+      <div class="section-title">Proteins</div>
+      <div class="section-subtitle">God's Grace Farm · price TBD</div>
+      <table class="order-table">
+        <thead><tr><th>Item</th><th>Qty</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="item-name">Whole chicken</span><div class="note">Fresh; for stew (Meal 1)</div></td>
+            <td>1 whole</td>
+            <td><span class="tag tag-tbd">TBD</span></td>
+          </tr>
+          <tr>
+            <td><span class="item-name">Chicken cuts</span><div class="note">Breast + thigh; for inasal (Meal 3)</div></td>
+            <td>1 kg</td>
+            <td><span class="tag tag-tbd">TBD</span></td>
+          </tr>
+          <tr>
+            <td><span class="item-name">Pork loin / shoulder</span><div class="note">Fresh; split between Meals 2 &amp; 4</div></td>
+            <td>1.5 kg</td>
+            <td><span class="tag tag-tbd">TBD</span></td>
+          </tr>
+          <tr>
+            <td><span class="item-name">Kimchi</span><div class="note">Fermented; side dish, lasts beyond 5 days</div></td>
+            <td>500g</td>
+            <td><span class="tag tag-tbd">TBD</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Eggs</div>
+      <div class="section-subtitle">Free via ₱1,000 threshold · 1 box of 12 per ₱1,000 spent</div>
+      <table class="order-table">
+        <thead><tr><th>Item</th><th>Qty</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="item-name">Eggs (boxes of 12)</span>
+              <div class="note">Veg spend ~₱1,741 = 1 box guaranteed. Add protein spend to determine total free boxes. Target: 36-48 eggs (3-4 boxes).</div>
+            </td>
+            <td>3-4 boxes</td>
+            <td><span class="tag tag-free">FREE</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Vegetables</div>
+      <div class="section-subtitle">God's Grace Farm · ~52% of original order</div>
+      <table class="order-table">
+        <thead><tr><th>Item</th><th>Qty</th><th>Est. Price</th></tr></thead>
+        <tbody>
+          <tr><td><span class="item-name">Broccoli</span></td><td>1 kg</td><td class="price">₱441</td></tr>
+          <tr><td><span class="item-name">Pechay / bok choy</span></td><td>1 kg</td><td class="price">₱225</td></tr>
+          <tr><td><span class="item-name">Zucchini</span></td><td>750g</td><td class="price">₱250</td></tr>
+          <tr><td><span class="item-name">Green bell pepper</span></td><td>500g</td><td class="price">₱261</td></tr>
+          <tr><td><span class="item-name">Cabbage</span></td><td>1 kg</td><td class="price">₱225</td></tr>
+          <tr><td><span class="item-name">Carrots</span></td><td>750g</td><td class="price">₱169</td></tr>
+          <tr><td><span class="item-name">Lemon</span><div class="note">For finishing / squeeze on everything</div></td><td>2 pcs</td><td class="price">~₱50</td></tr>
+          <tr><td><span class="item-name">Red onions (sibuyas)</span></td><td>4-6 small</td><td class="price">~₱80</td></tr>
+          <tr><td><span class="item-name">Fresh ginger</span><div class="note">Small knob; used sparingly</div></td><td>~80g</td><td class="price">~₱40</td></tr>
+        </tbody>
+      </table>
+      <div class="budget-row total" style="margin-top:16px;">
+        <span class="label">Vegetable Total</span>
+        <span class="value">~₱1,741</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Pantry &amp; Seasoning</div>
+      <div class="section-subtitle">Grocery or wet market · one-time buy · confirm what chef already has</div>
+      <table class="order-table">
+        <thead><tr><th>Item</th><th>Qty</th><th>Est. Price</th></tr></thead>
+        <tbody>
+          <tr><td><span class="item-name">Garlic</span><div class="note">Heavy use across every meal</div></td><td>3-4 heads</td><td class="price">~₱50</td></tr>
+          <tr><td><span class="item-name">Black peppercorns</span><div class="note">On everything; buy the bigger bag</div></td><td>1 bag</td><td class="price">~₱50</td></tr>
+          <tr><td><span class="item-name">Coconut oil (virgin)</span><div class="note">Primary cooking fat; all meals</div></td><td>250-500mL</td><td class="price">~₱175</td></tr>
+          <tr>
+            <td><span class="item-name">Coconut aminos</span>
+            <div class="note">Quezon's Best 375mL; soy-free, zero phytoestrogens. Healthy Options, Landers, Lazada, or Shopee</div></td>
+            <td>1 bottle</td>
+            <td class="price">~₱235</td>
+          </tr>
+          <tr><td><span class="item-name">Vinegar</span><div class="note">Coconut or cane; for adobo base</div></td><td>1 small bottle</td><td class="price">~₱20</td></tr>
+          <tr><td><span class="item-name">Bay leaves</span></td><td>1 small pack</td><td class="price">~₱12</td></tr>
+          <tr><td><span class="item-name">Annatto / atsuete seeds</span><div class="note">For inasal color on Meal 3</div></td><td>1 small pack</td><td class="price">~₱12</td></tr>
+        </tbody>
+      </table>
+      <div class="budget-row total" style="margin-top:16px;">
+        <span class="label">Pantry Total</span>
+        <span class="value">~₱554</span>
+      </div>
+      <div style="margin-top:12px; font-size:13px; color:var(--text-mid);">
+        Optional add: Fish sauce (patis) ~₱20/bottle. Soy-free, zero estrogen concern; fermented fish + salt. Good second umami layer if chef wants it.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Fruit</div>
+      <div class="section-subtitle">Bought separately at wet market · NOT part of the farm order</div>
+      <table class="order-table">
+        <thead><tr><th>Item</th><th>Qty</th><th>Est. Price</th></tr></thead>
+        <tbody>
+          <tr><td><span class="item-name">Lakatan bananas</span><div class="note">Daily; buy every 2-3 days</div></td><td>10-12 pcs</td><td class="price">~₱100</td></tr>
+          <tr><td><span class="item-name">Carabao mango</span></td><td>2 pcs</td><td class="price">~₱100</td></tr>
+          <tr><td><span class="item-name">Papaya (small)</span><div class="note">Red Lady or solo variety</div></td><td>1 pc</td><td class="price">~₱50</td></tr>
+          <tr><td><span class="item-name">Pineapple (small-med)</span></td><td>1 pc</td><td class="price">~₱70</td></tr>
+        </tbody>
+      </table>
+      <div class="budget-row total" style="margin-top:16px;">
+        <span class="label">Fruit Total</span>
+        <span class="value">~₱320</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Budget Summary</div>
+      <div class="budget-row"><span class="label">Vegetables</span><span class="value">~₱1,741</span></div>
+      <div class="budget-row"><span class="label">Eggs</span><span class="value">₱0 <span class="tag tag-free" style="margin-left:6px;">FREE</span></span></div>
+      <div class="budget-row"><span class="label">Pantry / seasoning</span><span class="value">~₱554</span></div>
+      <div class="budget-row"><span class="label">Labor (chef + cleaner)</span><span class="value">₱3,420</span></div>
+      <div class="budget-row total"><span class="label">Confirmed Subtotal</span><span class="value">~₱5,715</span></div>
+      <div class="budget-row"><span class="label">Proteins + kimchi</span><span class="value"><span class="tag tag-tbd">TBD</span></span></div>
+      <div class="budget-row"><span class="label">Fruit (separate)</span><span class="value"><span class="tag tag-separate">~₱320</span></span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Action Items</div>
+      <div id="action-items">
+        <div class="action-item" onclick="toggleAction(this)">
+          <div class="action-check"></div>
+          <span class="action-text">Get God's Grace Farm quote: 1 whole chicken + 1kg cuts + 1.5kg pork + 500g kimchi</span>
+        </div>
+        <div class="action-item" onclick="toggleAction(this)">
+          <div class="action-check"></div>
+          <span class="action-text">Confirm free egg count once protein price is in (total farm spend ÷ 1,000 = free boxes)</span>
+        </div>
+        <div class="action-item" onclick="toggleAction(this)">
+          <div class="action-check"></div>
+          <span class="action-text">Ask chef which pantry items she already brings vs. what you supply</span>
+        </div>
+        <div class="action-item" onclick="toggleAction(this)">
+          <div class="action-check"></div>
+          <span class="action-text">Buy coconut aminos from Healthy Options (Ayala/SM), Landers, or order via Lazada/Shopee</span>
+        </div>
+        <div class="action-item" onclick="toggleAction(this)">
+          <div class="action-check"></div>
+          <span class="action-text">Buy fruit at wet market day-of or day-before; bananas daily</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==================== COOKING TAB ==================== -->
+  <div id="tab-cooking" class="tab-panel">
+
+    <div class="recipe-card">
+      <div class="recipe-header">
+        <div class="recipe-day">Day 1 · Containers A1 + B1</div>
+        <div class="recipe-name">Coconut Adobo Chicken Stew</div>
+        <div class="recipe-containers">Whole chicken, broken down · Stew-style</div>
+      </div>
+      <div class="recipe-body">
+        <div class="recipe-section-label">Protein</div>
+        <ul class="ingredient-list">
+          <li>Whole chicken (broken down: thighs, drumsticks, breast quarters)</li>
+        </ul>
+
+        <div class="recipe-section-label">Vegetables</div>
+        <ul class="ingredient-list">
+          <li>Broccoli</li><li>Carrots (chunked)</li><li>Pechay / bok choy</li><li>Ginger (sliced)</li><li>Red onion (quartered)</li>
+        </ul>
+
+        <div class="recipe-section-label">Seasoning</div>
+        <ul class="ingredient-list">
+          <li>Coconut aminos</li><li>Coconut vinegar</li><li>Garlic (5-6 cloves, crushed)</li><li>Bay leaves (2-3)</li><li>Peppercorns (whole, cracked)</li><li>Coconut oil</li>
+        </ul>
+
+        <div class="recipe-section-label">Kimchi</div>
+        <ul class="ingredient-list"><li>Served on the side, not cooked in</li></ul>
+
+        <div class="recipe-section-label">Chef's Guidance</div>
+        <div class="chef-note">
+          <p>Adobo-style braise using coconut aminos instead of soy. Brown the chicken pieces skin-side down in coconut oil first; get real color on the skin before anything else goes in.</p>
+          <p>Build the braise: garlic, onion, peppercorns, bay leaves, generous pour of coconut aminos, splash of vinegar. Ratio is roughly 3 parts aminos to 1 part vinegar; adjust to taste. Liquid should come about halfway up the chicken, not cover it.</p>
+          <p>Simmer low and slow with lid on until chicken is falling-off-the-bone tender. Add carrots about halfway through. Broccoli and pechay go in during the last 5-8 minutes only; they should still have color and bite.</p>
+          <p>Ginger slices stay in the broth the entire time. The broth should reduce to something thick enough to coat the back of a spoon. Optional lemon squeeze at the end to finish.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <div class="recipe-header">
+        <div class="recipe-day">Day 2 · Containers A2 + B2</div>
+        <div class="recipe-name">Garlic-Ginger Pork with Coconut Oil Veg</div>
+        <div class="recipe-containers">Pork sliced thin · Seared hot and fast</div>
+      </div>
+      <div class="recipe-body">
+        <div class="pork-warning">⚠ Last order the pork came out tough and overdone. Sear hot and fast; 2-3 minutes per side max. Pull off heat and let rest. Better slightly pink inside than dry.</div>
+
+        <div class="recipe-section-label">Protein</div>
+        <ul class="ingredient-list">
+          <li>~750g pork loin or shoulder, sliced thin against the grain (~1cm medallions or strips)</li>
+        </ul>
+
+        <div class="recipe-section-label">Vegetables</div>
+        <ul class="ingredient-list">
+          <li>Cabbage (rough chopped)</li><li>Bell pepper (strips)</li><li>Zucchini (half-moons)</li><li>Red onion (sliced)</li>
+        </ul>
+
+        <div class="recipe-section-label">Seasoning</div>
+        <ul class="ingredient-list">
+          <li>Garlic (4-5 cloves, minced)</li><li>Ginger (minced, small amount)</li><li>Coconut aminos</li><li>Coconut oil</li><li>Black pepper (coarse)</li><li>Lemon juice to finish</li>
+        </ul>
+
+        <div class="recipe-section-label">Chef's Guidance</div>
+        <div class="chef-note">
+          <p>Marinate sliced pork at least 30 minutes: coconut aminos + garlic + ginger + cracked pepper.</p>
+          <p>Sear in a hot pan with coconut oil. Get a caramel color from the aminos sugars. Don't crowd the pan; do batches if needed. Pull each batch when just done.</p>
+          <p>Cook veg separately in the same pan after the pork. Coconut oil, onion first, then bell pepper and cabbage, zucchini last (it goes mushy fast). Everything should still have crunch.</p>
+          <p>Hit the veg with a little coconut aminos and a squeeze of lemon at the end. Layer pork and veg in the container separately; keeps textures distinct when reheating.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <div class="recipe-header">
+        <div class="recipe-day">Day 3 · Containers A3 + B3</div>
+        <div class="recipe-name">Lemon-Annatto Chicken (Inasal Style)</div>
+        <div class="recipe-containers">Chicken cuts · Grilled or pan-seared</div>
+      </div>
+      <div class="recipe-body">
+        <div class="recipe-section-label">Protein</div>
+        <ul class="ingredient-list">
+          <li>1kg chicken breast + thigh cuts</li>
+        </ul>
+
+        <div class="recipe-section-label">Vegetables</div>
+        <ul class="ingredient-list">
+          <li>Pechay / bok choy</li><li>Carrots (julienned or thin coins)</li><li>Red onion (rings)</li>
+        </ul>
+
+        <div class="recipe-section-label">Seasoning</div>
+        <ul class="ingredient-list">
+          <li>Lemon juice (fresh)</li><li>Garlic (generous)</li><li>Ginger (small amount)</li><li>Annatto/atsuete seeds</li><li>Coconut oil</li><li>Black pepper</li><li>Salt</li>
+        </ul>
+
+        <div class="recipe-section-label">Chef's Guidance</div>
+        <div class="chef-note">
+          <p>Inspired by Bacolod chicken inasal. Make the marinade: lemon juice, minced garlic, minced ginger, black pepper, and annatto oil (steep atsuete seeds in warm coconut oil 10-15 minutes for the orange color, then strain).</p>
+          <p>Marinate chicken at least 1 hour; overnight in fridge is better if timing allows.</p>
+          <p>Grill or pan-sear in coconut oil. Baste with leftover marinade while cooking. Thighs handle more heat; breast pieces need attention so they don't dry out. Chef should use her judgment on doneness; juicy inside with charred edges is the goal.</p>
+          <p>Slice before putting in containers so it reheats evenly. Sauté pechay and carrots quickly in coconut oil with garlic; keep it simple. Onion rings can go raw or lightly charred. Lemon wedge in each container for squeezing at mealtime.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <div class="recipe-header">
+        <div class="recipe-day">Day 4 · Containers A4 + B4</div>
+        <div class="recipe-name">Kimchi-Ginger Pork Stew</div>
+        <div class="recipe-containers">Remaining pork, cubed · Slow-simmered</div>
+      </div>
+      <div class="recipe-body">
+        <div class="pork-warning">⚠ Stew pork is more forgiving than seared, but still shouldn't be boiled to death. Fork-tender, not dry threads. If using loin, keep cubes larger so they hold moisture.</div>
+
+        <div class="recipe-section-label">Protein</div>
+        <ul class="ingredient-list">
+          <li>~750g pork, cut into bite-sized cubes</li>
+        </ul>
+
+        <div class="recipe-section-label">Vegetables</div>
+        <ul class="ingredient-list">
+          <li>Broccoli</li><li>Cabbage (chopped)</li><li>Zucchini (chunked)</li><li>Ginger (sliced)</li><li>Red onion (diced)</li>
+        </ul>
+
+        <div class="recipe-section-label">Seasoning</div>
+        <ul class="ingredient-list">
+          <li>Coconut aminos</li><li>Coconut oil</li><li>Garlic (crushed)</li><li>Black pepper</li><li>Kimchi (stirred in at the end)</li>
+        </ul>
+
+        <div class="recipe-section-label">Chef's Guidance</div>
+        <div class="chef-note">
+          <p>Brown the pork cubes in coconut oil first; build fond on the bottom of the pot. Don't skip this step; it's where the flavor comes from. Remove pork, sauté onion, garlic, ginger slices in the same pot.</p>
+          <p>Deglaze with coconut aminos and a splash of water or bone broth if available. Return pork, add enough liquid to almost cover, simmer. Low heat, lid on, 30-40 minutes or until fork-tender.</p>
+          <p>Add cabbage and broccoli in the last 10 minutes. Zucchini in the last 5. Kimchi goes in at the very end, off heat; stir through so it warms but doesn't cook down and lose its tang.</p>
+          <p>If chef has tamarind paste or powder available, a small amount in the broth gives it a sinigang-style sour backbone that pairs well with the kimchi. Optional; up to her.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <div class="recipe-header">
+        <div class="recipe-day">Day 5 · Fresh Cook · No Container</div>
+        <div class="recipe-name">Day 5 Eggs</div>
+        <div class="recipe-containers">Eggs + remaining veg + whatever's left · 10 minutes to cook</div>
+      </div>
+      <div class="recipe-body">
+        <div class="recipe-section-label">Ingredients</div>
+        <ul class="ingredient-list">
+          <li>4-6 eggs per person</li><li>Remaining raw veg (pechay, carrots, onion, etc.)</li><li>Coconut oil</li><li>Garlic</li><li>Black pepper</li><li>Lemon</li><li>Kimchi if any remains</li>
+        </ul>
+
+        <div class="recipe-section-label">Three Options</div>
+        <div class="day5-options">
+          <div class="day5-option">
+            <h4>Option A: Egg Stir-Fry</h4>
+            <p>Scramble eggs in coconut oil with garlic, toss in whatever veg is left, black pepper and lemon squeeze. Kimchi on the side.</p>
+          </div>
+          <div class="day5-option">
+            <h4>Option B: Fried Eggs Over Garlic Veg</h4>
+            <p>Sauté remaining veg in coconut oil with sliced garlic until just wilted. Plate, put fried eggs on top (runny yolk preferred). Black pepper, lemon.</p>
+          </div>
+          <div class="day5-option">
+            <h4>Option C: Egg Drop Soup</h4>
+            <p>If there's leftover broth from the stews, heat it up, beat eggs into it for a quick egg-drop with whatever veg scraps are around. Ginger and garlic base.</p>
+          </div>
+        </div>
+        <div style="margin-top:14px; font-size:13px; color:var(--text-mid);">Bananas and fruit fill snack gaps on days 4 and 5.</div>
+      </div>
+    </div>
+
+    <div class="chef-summary">
+      <h3>Quick Reference for Chef</h3>
+      <ul>
+        <li>All cooking in <strong>coconut oil</strong>; no vegetable oil, no soy sauce</li>
+        <li>The dark sauce is <strong>coconut aminos</strong>; use wherever she'd normally use soy</li>
+        <li><strong>Garlic and black pepper go heavy</strong> on everything; nothing should taste plain</li>
+        <li><strong>Pork: don't overcook.</strong> Hot and fast for sliced (Meal 2). Low and slow for cubed stew (Meal 4). Last time it was tough.</li>
+        <li><strong>Veg goes in last</strong> in every recipe; should still have color and texture</li>
+        <li><strong>Kimchi is a side or stirred in at the end</strong>, never cooked into the braise</li>
+        <li>She has full latitude on seasoning ratios, timing, and finishing touches; these are frameworks, not scripts</li>
+        <li>All 8 containers filled and refrigerated on prep day; label Day 1 through Day 4</li>
+        <li>Leave ~25% of raw veg unprepped in fridge for Day 5 egg cooking</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ==================== SORTING TAB ==================== -->
+  <div id="tab-sorting" class="tab-panel">
+
+    <div class="section">
+      <div class="section-title">Container Layout</div>
+      <div class="section-subtitle">4 containers per person · Each container = lunch + dinner for one day · Labeled by day</div>
+
+      <div style="margin-bottom:24px;">
+        <div class="day-label">Day 1 — Coconut Adobo Chicken Stew</div>
+        <div class="container-grid">
+          <div class="container-card person-a">
+            <div class="container-card-header"><span>A1</span><span>Person 1</span></div>
+            <div class="container-card-body">
+              <div class="meal-name">Coconut Adobo Chicken Stew</div>
+              <div class="meal-contents">Chicken pieces (thigh + drumstick) in adobo broth · broccoli + carrots + pechay · kimchi side portion</div>
+            </div>
+          </div>
+          <div class="container-card person-b">
+            <div class="container-card-header"><span>B1</span><span>Person 2</span></div>
+            <div class="container-card-body">
+              <div class="meal-name">Coconut Adobo Chicken Stew</div>
+              <div class="meal-contents">Chicken pieces (thigh + breast quarter) in adobo broth · broccoli + carrots + pechay · kimchi side portion</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-label">Day 2 — Garlic-Ginger Pork + Coconut Oil Veg</div>
+        <div class="container-grid">
+          <div class="container-card person-a">
+            <div class="container-card-header"><span>A2</span><span>Person 1</span></div>
+            <div class="container-card-body">
+              <div class="meal-name">Garlic-Ginger Pork</div>
+              <div class="meal-contents">Seared pork slices (layered separate from veg) · cabbage + bell pepper + zucchini sauté</div>
+            </div>
+          </div>
+          <div class="container-card person-b">
+            <div class="container-card-header"><span>B2</span><span>Person 2</span></div>
+            <div class="container-card-body">
+              <div class="meal-name">Garlic-Ginger Pork</div>
+              <div class="meal-contents">Seared pork slices (layered separate from veg) · cabbage + bell pepper + zucchini sauté</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-label">Day 3 — Lemon-Annatto Chicken (Inasal Style)</div>
+        <div class="container-grid">
+          <div class="container-card person-a">
+            <div class="container-card-header"><span>A3</span><span>Person 1</span></div>
+            <div class="container-card-body">
+              <div class="meal-name">Inasal Chicken</div>
+              <div class="meal-contents">Sliced marinated chicken (pre-cut for reheating) · pechay + carrots + onion rings · lemon wedge</div>
+            </div>
+          </div>
+          <div class="container-card person-b">
+            <div class="container-card-header"><span>B3</span><span>Person 2</span></div>
+            <div class="container-card-body">
+              <div class="meal-name">Inasal Chicken</div>
+              <div class="meal-contents">Sliced marinated chicken (pre-cut for reheating) · pechay + carrots + onion rings · lemon wedge</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-label">Day 4 — Kimchi-Ginger Pork Stew</div>
+        <div class="container-grid">
+          <div class="container-card person-a">
+            <div class="container-card-header"><span>A4</span><span>Person 1</span></div>
+            <div class="container-card-body">
+              <div class="meal-name">Kimchi-Ginger Pork Stew</div>
+              <div class="meal-contents">Pork cubes in broth · broccoli + cabbage + zucchini · kimchi stirred through</div>
+            </div>
+          </div>
+          <div class="container-card person-b">
+            <div class="container-card-header"><span>B4</span><span>Person 2</span></div>
+            <div class="container-card-body">
+              <div class="meal-name">Kimchi-Ginger Pork Stew</div>
+              <div class="meal-contents">Pork cubes in broth · broccoli + cabbage + zucchini · kimchi stirred through</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Day 5 — No Container</div>
+      <div class="section-subtitle">Fresh cook from remaining ingredients</div>
+      <div style="font-size:14px; color:var(--text-mid); line-height:1.7;">
+        Eggs (4-6 per person) cooked fresh with whatever raw veg remains. Stir-fry, fried eggs over garlic veg, or egg drop soup if stew broth is left. Bananas and fruit fill snack gaps. No prep container needed; this cooks in 10 minutes.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Sorting Instructions for Chef</div>
+      <div class="section-subtitle">Step-by-step container filling on prep day</div>
+
+      <div class="sorting-step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h4>Label all 8 containers before filling</h4>
+          <p>A1, A2, A3, A4 for Person 1. B1, B2, B3, B4 for Person 2. Use tape or marker. Day number on each lid.</p>
+        </div>
+      </div>
+
+      <div class="sorting-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h4>Set aside ~25% of raw vegetables</h4>
+          <p>Before cooking anything, pull aside a portion of pechay, carrots, onion, and any other veg for Day 5 fresh cooking. Store raw in a separate bag or container in the fridge.</p>
+        </div>
+      </div>
+
+      <div class="sorting-step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h4>Cook all four meals</h4>
+          <p>All meat gets cooked on prep day. Follow the recipe order: Meal 1 (chicken stew), Meal 2 (pork seared), Meal 3 (inasal chicken), Meal 4 (pork stew). Vegetables go in last for each meal.</p>
+        </div>
+      </div>
+
+      <div class="sorting-step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h4>Fill containers while food is warm</h4>
+          <p>Split each meal evenly between the A and B container for that day. For Meal 2 (seared pork): layer pork on one side, veg on the other; don't mix. For stews (Meals 1 &amp; 4): include enough broth to keep meat moist during reheating.</p>
+        </div>
+      </div>
+
+      <div class="sorting-step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h4>Add sides</h4>
+          <p>Kimchi gets a small portion in Day 1 and Day 4 containers. If containers have a divider or small compartment, use it. If not, kimchi in a small separate container or bag is fine. Lemon wedge goes in Day 3 containers.</p>
+        </div>
+      </div>
+
+      <div class="sorting-step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <h4>Cool and refrigerate immediately</h4>
+          <p>Let containers cool to room temperature (30-45 min max), then refrigerate. Don't stack while hot; condensation makes lids pop. Once cool, stack and organize by day in the fridge.</p>
+        </div>
+      </div>
+
+      <div class="sorting-step">
+        <div class="step-number">7</div>
+        <div class="step-content">
+          <h4>Rotation in the fridge</h4>
+          <p>Day 1 and Day 2 containers in front (eat first). Day 3 and Day 4 containers behind. Protein rotation: chicken → pork → chicken → pork. No same protein two days in a row.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Consumption Schedule</div>
+      <table class="order-table">
+        <thead><tr><th>Day</th><th>Meal</th><th>Protein</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Day 1</strong></td><td>Coconut Adobo Stew</td><td>Chicken</td><td>Container A1/B1</td></tr>
+          <tr><td><strong>Day 2</strong></td><td>Garlic-Ginger Pork</td><td>Pork</td><td>Container A2/B2</td></tr>
+          <tr><td><strong>Day 3</strong></td><td>Inasal Chicken</td><td>Chicken</td><td>Container A3/B3</td></tr>
+          <tr><td><strong>Day 4</strong></td><td>Kimchi-Ginger Stew</td><td>Pork</td><td>Container A4/B4</td></tr>
+          <tr><td><strong>Day 5</strong></td><td>Eggs + Veg</td><td>Eggs</td><td>Fresh cook</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="print-note">
+      Bookmark or screenshot this page for reference during prep day
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
